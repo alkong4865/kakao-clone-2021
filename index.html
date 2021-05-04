@@ -33,14 +33,24 @@
       </p>
     </header>
 
-    <form class="login-form">
+    <form action="friends.html" method="get" class="login-form">
       <input
         class="login-form__input"
+        required
         type="text"
-        placeholder="Email of Phone number"
+        placeholder="Email or Phone number"
       />
-      <input class="login-form__input" type="password" placeholder="Password" />
-      <button class="login-form__btn" type="submit">Log In</button>
+
+      <input
+        class="login-form__input"
+        name="username"
+        required
+        type="password"
+        placeholder="Password"
+      />
+      <button class="login-form__btn" name="password" type="submit">
+        Log In
+      </button>
       <a class="login-form__a" href="#">Find Kakao Account or Password</a>
     </form>
 
